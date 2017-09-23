@@ -9,13 +9,11 @@ let fileName = "align";
 
 let libraryName = JSON.stringify(require("./package.json").name).replace(/\"/g, "");
 let version = JSON.stringify(require("./package.json").version).replace(/\"/g, "");
-let JsDocPlugin = require('jsdoc-webpack-plugin-v2');
 
 let plugins = [], outputFile;
 
 if (env === "build") {
   plugins.push(new UglifyJsPlugin({minimize: true}));
-  // plugins.push(new JsDocPlugin({conf: path.join(__dirname, 'jsdoc.json')}));
   outputFile = fileName + "-" + version + ".min.js";
 } else {
   outputFile = fileName + "-" + version + ".js";

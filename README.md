@@ -41,5 +41,6 @@ Please open an [issue](https://github.com/genradley/JSDisplayObjectAlignment/iss
 ## JSDocs
 Please download or fork the repo and open [/docs/index.html](/docs/index.html) in a web browser
 
+I am currently figuring out how to run jsdocs with webpack so you will not see the jsdoc plugin in the webpack.config.js as of yet. The docs here were generated with grunt in another project structure.  
 ## Credits
 This project used the [webpack-library-starter](https://github.com/krasimir/webpack-library-starter) project
