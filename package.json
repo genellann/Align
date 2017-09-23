@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gradley/DisplayObjectAlignment.git"
+    "url": "https://github.com/genradley/JSDisplayObjectAlignment.git"
   },
   "keywords": [
     "display object",
@@ -40,7 +40,7 @@
   "author": "Genell Radley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gradley/DisplayObjectAlignment/issues"
+    "url": "https://github.com/genradley/JSDisplayObjectAlignment/issues"
   },
-  "homepage": "https://github.com/gradley/DisplayObjectAlignment"
+  "homepage": "https://github.com/genradley/JSDisplayObjectAlignment"
 }

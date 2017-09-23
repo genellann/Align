@@ -34,7 +34,7 @@ In your index.html, add a script tag to include the version of the align.min.js 
     }    
 
 ## This library is unit tested
-Please open an [issue](https://github.com/gradley/DisplayObjectAlignment/issues) if you find any bugs. We will fix the issue and add a test for it.
+Please open an [issue](https://github.com/genradley/JSDisplayObjectAlignment/issues) if you find any bugs. We will fix the issue and add a test for it.
 
 ## This library has jsdocs
 Please download or fork the repo and open [/docs/index.html](/docs/index.html) in a web browser
