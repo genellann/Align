@@ -1,8 +1,13 @@
 /**
- * Created by Genell Radley on 12/23/2016.
+ * Created by Genell Radley in 2017.
+ *
+ * https://github.com/gradley/DisplayObjectAlignment
  */
 
 /**
+ * Created by Genell Radley in 2017.
+ * https://github.com/gradley/DisplayObjectAlignment
+ *
  * Get and optionally set the x or y alignment of a child display object.
  * Can add child to parent.
  */
