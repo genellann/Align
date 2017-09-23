@@ -38,3 +38,6 @@ Please open an [issue](https://github.com/genradley/JSDisplayObjectAlignment/iss
 
 ## This library has jsdocs
 Please download or fork the repo and open [/docs/index.html](/docs/index.html) in a web browser
+
+## Credits
+This project used the [webpack-library-starter](https://github.com/krasimir/webpack-library-starter) project
