@@ -1,7 +1,7 @@
 {
   "name": "Align",
   "version": "0.0.1",
-  "description": "Produce universal library with webpack and es6",
+  "description": "Align display objects relatively",
   "main": "src/Align.js",
   "scripts": {
     "build": "webpack --env build",
@@ -19,27 +19,28 @@
     "chai": "3.5.0",
     "eslint": "3.19.0",
     "eslint-loader": "1.7.1",
+    "jsdoc-webpack-plugin-v2": "^2.0.2",
     "mocha": "3.3.0",
     "webpack": "3.1.0",
     "yargs": "7.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
+    "url": "https://github.com/gradley/DisplayObjectAlignment.git"
   },
   "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
+    "display object",
+    "align",
+    "alignment",
+    "position",
+    "positioning",
+    "pixi",
+    "phaser"
   ],
-  "author": "Krasimir Tsonev",
+  "author": "Genell Radley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
+    "url": "https://github.com/gradley/DisplayObjectAlignment/issues"
   },
-  "homepage": "https://github.com/krasimir/webpack-library-starter"
+  "homepage": "https://github.com/gradley/DisplayObjectAlignment"
 }

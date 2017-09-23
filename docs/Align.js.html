@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Align.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="scripts/prettify/springeo.js" defer async></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/springeo.css">
+    <link type="text/css" rel="stylesheet" href="styles/simple-jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><input id="search" type="search" placeholder="Search..."><h3>Classes</h3><ul id=classes><li><a href="Align.html"><div class="ancestor"></div>Align</a><ul class='methods'><li data-type='method'><a href="Align.html#.alignX">alignX</a></li><li data-type='method'><a href="Align.html#.alignXandY">alignXandY</a></li><li data-type='method'><a href="Align.html#.alignY">alignY</a></li></ul></li></ul><h3>Interfaces</h3><ul id=interfaces><li><a href="IAlignable.html"><div class="ancestor"></div>IAlignable</a><ul class='methods'><li data-type='method'><a href="IAlignable.html#align">align</a></li><li data-type='method'><a href="IAlignable.html#reAlign">reAlign</a></li></ul></li></ul><h3>Global</h3><ul id="global"><li><a href="global.html#align">align</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Align.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Created by gradley on 12/23/2016.
+ */
+
+/**
+ * Get and optionally set the x or y alignment of a child display object.
+ * Can add child to parent.
+ */
+class Align {
+
+    /**
+     * Calculate the x position based on two widths and whether you want center, left, or right alignment.
+     * Optionally pass in the actual x position you want instead of getting a calculation based on relation.
+     * If the child is a display object, the x position will be set.
+     * Optionally add the child to the parent.
+     * @param {DisplayObject|number} parent - Parent display object or the width of the parent.
+     * @param {DisplayObject|number} child - Child display object or the width of the child.
+     * @param {string|number} [alignX=0] - Align.CENTER, Align.LEFT, Align.RIGHT, or the actual x value.
+     * @param {number} [padding=0] - If LEFT, the space between the left edge and x. If RIGHT, the space between the right edge and the end of the child's width.
+     * @param {boolean} [addChild=false] - Whether you want the child to be added to the parent. Only if parent and child are display objects.
+     * @returns {number} The x value.
+     */
+    static alignX(parent, child, alignX = 0, padding = 0, addChild = false) {
+        return align("x", parent, child, alignX, padding, addChild);
+    }
+
+    /**
+     * Calculate the y position based on two heights and whether you want center, top, or bottom alignment.
+     * Optionally pass in the actual y position you want instead of getting a calculation based on relation.
+     * If the child is a display object, the y position will be set.
+     * Optionally add the child to the parent.
+     * @param {DisplayObject|number} parent - Parent display object or the height of the parent.
+     * @param {DisplayObject|number} child - Child display object or the height of the child.
+     * @param {string|number} [alignY=0] - Align.CENTER, Align.TOP, Align.BOTTOM, or the actual y value.
+     * @param {number} [padding=0] - If TOP, the space between the top edge and y. If BOTTOM, the space between the bottom edge and the end of the child's height.
+     * @param {boolean} [addChild=false] - Whether you want the child to be added to the parent. Only if parent and child are display objects.
+     * @returns {number} The y value.
+     */
+    static alignY(parent, child, alignY = 0, padding = 0, addChild = false) {
+        return align("y", parent, child, alignY, padding, addChild);
+    }
+
+    /**
+     * Calculate the x and y position of a child display object relative to the parent.
+     * Either center, left, right, top, or bottom alignment.
+     * Optionally pass in the actual x and/or y position you want instead of getting a calculation based on relation.
+     * The x and y positions of the child display object will be set.
+     * Optionally add the child to the parent.
+     * @param {DisplayObject|number} parent - Parent display object.
+     * @param {DisplayObject|number} child - Child display.
+     * @param {string|number} [alignX=0] - Align.CENTER, Align.LEFT, Align.RIGHT, or the actual x value.
+     * @param {string|number} [alignY=0] - Align.CENTER, Align.TOP, Align.BOTTOM, or the actual y value.
+     * @param {number} [paddingX=0] - If LEFT, the space between the left edge and x. If RIGHT, the space between the right edge and the end of the child's width.
+     * @param {number} [paddingY=0] - If TOP, the space between the top edge and y. If BOTTOM, the space between the bottom edge and the end of the child's height.
+     * @param {boolean} [addChild=false] - Whether you want the child to be added to the parent. Only if parent and child are display objects.
+     */
+    static alignXandY(parent, child, alignX = 0, alignY = 0, paddingX = 0, paddingY = 0, addChild = false) {
+        Align.alignX(parent, child, alignX, paddingX, false);
+        Align.alignY(parent, child, alignY, paddingY, addChild);
+    }
+}
+
+/**
+ * Private utility function for Align methods.
+ * @param {string} axis = "x" or "y"
+ * @param {DisplayObject|number} parent - Parent display object or the size (width or height depending on the axis) of the parent.
+ * @param {DisplayObject|number} child - Child display object or the size (width or height depending on the axis) of the child.
+ * @param {string|number} [alignDesired=0] - Align.CENTER, Align.LEFT, Align.RIGHT, Align.TOP, Align.BOTTOM, or the actual value for the axis.
+ * @param {number} [padding=0] - space between.
+ * @param {boolean} [addChild=false] - Whether you want the child to be added to the parent. Only if parent and child are display objects.
+ * @returns {*}
+ */
+// TODO: for some reason x or y is undefined if I don't set it (sprite.align). should be 0.
+function align(axis, parent, child, alignDesired = 0, padding = 0, addChild = false) {
+
+    let leftOrTop = (axis === "x") ? Align.LEFT : Align.TOP;
+    let rightOrBottom = (axis === "x") ? Align.RIGHT : Align.BOTTOM;
+
+    let parentSize;
+    let childSize;
+
+    // TODO: Wish I could type check the parent and child for being PIXI.DisplayObjectContainer. https://spingames.atlassian.net/browse/GR-225
+    if (!parent || !child) {
+        console.log("Align.align() - Error: parent or child is null or undefined");
+        return;
+    }
+
+    let retVal;
+
+    if (alignDesired !== Align.CENTER &amp;&amp; alignDesired !== leftOrTop &amp;&amp; alignDesired !== rightOrBottom &amp;&amp; typeof alignDesired !== "number") {
+        retVal = 0;
+    }
+
+    if (typeof padding !== "number") {
+        padding = 0;
+    }
+
+    if (typeof addChild !== "boolean") {
+        addChild = false;
+    }
+
+    if (axis !== "x" &amp;&amp; axis !== "y") {
+        console.log("Align.align() - Error: axis must be 'x' or 'y'");
+        return;
+    }
+
+    if (axis === "x") {
+        parentSize = (typeof parent === "number") ? parent : parent.width;
+        childSize = (typeof child === "number") ? child : child.width;
+    } else {
+        parentSize = (typeof parent === "number") ? parent : parent.height;
+        childSize = (typeof child === "number") ? child : child.height;
+    }
+
+    switch (alignDesired) {
+        case Align.CENTER:
+            retVal = (parentSize * 0.5) - (childSize * 0.5) + padding;
+            break;
+        case leftOrTop:
+            retVal = padding;
+            break;
+        case rightOrBottom:
+            if (parentSize > childSize) {
+                retVal = parentSize - childSize - padding;
+            } else {
+                retVal = -(childSize - parentSize) - padding;
+            }
+            break;
+        default:
+            // alignDesired must already be a number if this default case is hit
+            retVal = alignDesired;
+    }
+
+    // TODO: Wish I could type check the parent and child for being PIXI.DisplayObjectContainer.
+    if (typeof child !== "number" &amp;&amp; typeof parent !== "number") {
+        if (axis === "x") {
+            child.x = retVal;
+        } else {
+            child.y = retVal;
+        }
+        if (addChild &amp;&amp; !(addChild.parent &amp;&amp; addChild.parent === parent)) {
+            parent.addChild(child);
+        }
+    }
+    return retVal;
+}
+
+Object.defineProperties(Align, {
+    "CENTER": {
+        value: "center",
+        writable: false,
+        enumerable: true,
+        configurable: false
+    },
+    "LEFT": {
+        value: "left",
+        writable: false,
+        enumerable: true,
+        configurable: false
+    },
+    "RIGHT": {
+        value: "right",
+        writable: false,
+        enumerable: true,
+        configurable: false
+    },
+    "TOP": {
+        value: "top",
+        writable: false,
+        enumerable: true,
+        configurable: false
+    },
+    "BOTTOM": {
+        value: "bottom",
+        writable: false,
+        enumerable: true,
+        configurable: false
+    }
+});
+
+export default Align;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<!-- <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri May 05 2017 17:29:48 GMT-0700 (PDT) using the Minami theme.
+</footer> -->
+
+<script>prettyPrint();</script>
+<!-- <script src="scripts/linenumber.js"></script> -->
+</body>
+</html>
