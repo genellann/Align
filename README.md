@@ -1,4 +1,4 @@
-## Relatively align display objects
+## This is a library that allows you to align display objects relative to one another
 Calculate the x and y position of a child display object relative to the parent. 
 
 Relationships: center, left, right, top, or bottom 
