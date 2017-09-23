@@ -15,7 +15,7 @@ This library works with any javascript display objects that have these propertie
 ![Consts](/assets/consts.png)
 
 #### An example
-![Example](/assets/example.png)
+![Example](/assets/example2.png)
 
 #### How to determine whether to make the padding pos/neg when using CENTER align
 ![Center Padding](/assets/center-padding.png)
