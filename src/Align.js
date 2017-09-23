@@ -1,13 +1,10 @@
 /**
  * Created by Genell Radley in 2017.
  *
- * https://github.com/gradley/DisplayObjectAlignment
+ * https://github.com/gradley/JSDisplayObjectAlignment
  */
 
 /**
- * Created by Genell Radley in 2017.
- * https://github.com/gradley/DisplayObjectAlignment
- *
  * Get and optionally set the x or y alignment of a child display object.
  * Can add child to parent.
  */
