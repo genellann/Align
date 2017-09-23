@@ -1,13 +1,13 @@
 ## Relatively align display objects
 This library works with any javascript display objects that have these properties/methods: x, y, width, height, addChild. You can use it with frameworks like PIXI and Phaser.
 
-The directions:
+### 
 ![Consts](/assets/consts.png)
 
-An example:
+###
 ![Example](/assets/example.png)
 
-Which way the padding goes if using center:
+###
 ![Center Padding](/assets/center-padding.png)
 
 ## In code example
@@ -24,6 +24,7 @@ In your index.html, add a script tag to include the align.min.js file. You will 
     }    
 
 ## This library is unit tested
-Please open an issue if you find any bugs. We will fix the issue and add a test for it.
+Please open an [issue](https://github.com/gradley/DisplayObjectAlignment/issues) if you find any bugs. We will fix the issue and add a test for it.
 
-## This library has [jsdocs](/docs/index.html)
+## This library has jsdocs
+Please download or fork the repo and open [/docs/index.html](/docs/index.html) in a web browser
