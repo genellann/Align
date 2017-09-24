@@ -14,6 +14,12 @@ This library works with any javascript display objects that have these propertie
 ### Relations
 ![Consts](/assets/consts.png)
 
+### Methods
+    alignX(parent, child, alignX = 0, padding = 0, addChild = false)
+    alignY(parent, child, alignY = 0, padding = 0, addChild = false)
+    alignXandY(parent, child, alignX = 0, alignY = 0, paddingX = 0, paddingY = 0, addChild = false)
+
+
 ### Example
 ![Example](/assets/example.png)
 
