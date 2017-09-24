@@ -11,6 +11,26 @@ You have the option to add the child to the parent.
    
 This library works with any javascript display objects that have these properties/methods: x, y, width, height, addChild. You can use it with frameworks like PIXI and Phaser.
 
+#### The Calculations
+###### CENTER
+    x = (parentWidth * 0.5) - (childWidth * 0.5) + padding;
+    y = (parentHeight * 0.5) - (childHeight * 0.5) + padding;
+###### LEFT or TOP
+    x = padding;
+    y = padding;
+###### RIGHT OR BOTTOM
+    if (parentWidth > childWidth) {
+      x = parentWidth - childWidth - padding;
+    } else {
+      x = -(childWidth - parentWidth) - padding;
+    }
+    --
+    if (parentHeight > childHeight) {
+      y = parentHeight - childHeight - padding;
+    } else {
+      y = -(childHeight - parentHeight) - padding;
+    }
+        
 #### Relations
 ![Consts](/assets/consts.png)
 
