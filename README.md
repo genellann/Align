@@ -1,4 +1,4 @@
-## This is a library that allows you to align display objects relative to one another
+# This is a library that allows you to align display objects relative to one another
 Calculate the x and y position of a child display object relative to the parent. 
 
 Relationships: center, left, right, top, or bottom 
@@ -11,7 +11,16 @@ You have the option to add the child to the parent.
    
 This library works with any javascript display objects that have these properties/methods: x, y, width, height, addChild. You can use it with frameworks like PIXI and Phaser.
 
-#### The Calculations
+### Relations
+![Consts](/assets/consts.png)
+
+### Example
+![Example](/assets/example.png)
+
+### How to determine whether to make the padding pos/neg when using CENTER align
+![Center Padding](/assets/center-padding.png)
+
+### The Calculations
 ###### CENTER
     x = (parentWidth * 0.5) - (childWidth * 0.5) + padding;
     y = (parentHeight * 0.5) - (childHeight * 0.5) + padding;
@@ -31,15 +40,6 @@ This library works with any javascript display objects that have these propertie
       y = -(childHeight - parentHeight) - padding;
     }
         
-#### Relations
-![Consts](/assets/consts.png)
-
-#### An example
-![Example](/assets/example.png)
-
-#### How to determine whether to make the padding pos/neg when using CENTER align
-![Center Padding](/assets/center-padding.png)
-
 ## Code
 
 The functions in the Align library are static. This mean you do not need to instantiate the class. You can just call it like: LibraryName.functionName().
