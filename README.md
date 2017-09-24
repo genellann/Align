@@ -30,16 +30,17 @@ This library works with any javascript display objects that have these propertie
 ###### CENTER
     x = (parentWidth * 0.5) - (childWidth * 0.5) + padding;
     y = (parentHeight * 0.5) - (childHeight * 0.5) + padding;
-###### LEFT or TOP
+###### LEFT
     x = padding;
+###### TOP
     y = padding;
-###### RIGHT OR BOTTOM
+###### RIGHT
     if (parentWidth > childWidth) {
       x = parentWidth - childWidth - padding;
     } else {
       x = -(childWidth - parentWidth) - padding;
     }
-    --
+###### BOTTOM
     if (parentHeight > childHeight) {
       y = parentHeight - childHeight - padding;
     } else {
