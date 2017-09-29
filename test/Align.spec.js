@@ -1,7 +1,7 @@
 /**
  * Created by Genell Radley in 2017.
  *
- * https://github.com/gradley/JSDisplayObjectAlignment
+ * https://github.com/gradley/Align
  */
 
 /* global describe, it, before */
