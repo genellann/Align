@@ -63,12 +63,10 @@ In your index.html, add a script tag to include the version of the align.min.js 
 ## Unit tests
 The tests are [here](/test/Align.spec.js).
 
-Please open an [issue](https://github.com/genradley/JSDisplayObjectAlignment/issues) if you find any bugs. We will fix the issue and add a test for it.
+Please open an [issue](https://github.com/genradley/Align/issues) if you find any bugs. We will fix the issue and add a test for it.
 
 ## JSDocs
 Please download or clone the repo and open [/docs/index.html](/docs/index.html) in a web browser
-
-I am currently figuring out how to run jsdocs with webpack so you will not see the jsdoc plugin in the webpack.config.js as of yet. The docs here were generated with grunt in another project structure.  
 
 ## See my other libs
 coming soon

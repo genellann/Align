@@ -2,38 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Align - Documentation</title>
+    <title>JSDoc: Class: Align</title>
 
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="scripts/prettify/springeo.js" defer async></script>
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-    <link type="text/css" rel="stylesheet" href="styles/springeo.css">
-    <link type="text/css" rel="stylesheet" href="styles/simple-jsdoc.css">
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
-
-<label for="nav-trigger" class="overlay"></label>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><input id="search" type="search" placeholder="Search..."><h3>Classes</h3><ul id=classes><li><a href="Align.html"><div class="ancestor"></div>Align</a><ul class='methods'><li data-type='method'><a href="Align.html#.alignX">alignX</a></li><li data-type='method'><a href="Align.html#.alignXandY">alignXandY</a></li><li data-type='method'><a href="Align.html#.alignY">alignY</a></li></ul></li></ul><h3>Interfaces</h3><ul id=interfaces><li><a href="IAlignable.html"><div class="ancestor"></div>IAlignable</a><ul class='methods'><li data-type='method'><a href="IAlignable.html#align">align</a></li><li data-type='method'><a href="IAlignable.html#reAlign">reAlign</a></li></ul></li></ul><h3>Global</h3><ul id="global"><li><a href="global.html#align">align</a></li></ul>
-</nav>
-
 <div id="main">
-    
-    <h1 class="page-title">Align</h1>
-    
+
+    <h1 class="page-title">Class: Align</h1>
 
     
 
@@ -44,9 +28,7 @@
 
 <header>
     
-        <h2>
-        Align
-        </h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Align<span class="signature">()</span><span class="type-signature"></span></h2>
         
             <div class="class-description">Get and optionally set the x or y alignment of a child display object.
 Can add child to parent.</div>
@@ -58,28 +40,29 @@ Can add child to parent.</div>
     <div class="container-overview">
     
         
-<div class="method">
+
     
-        
-        <h2>Constructor</h2>
-        
+    <h2>Constructor</h2>
+    
 
-        <h4 class="name" id="Align"><span class="type-signature"></span>new Align<span class="signature">()</span><span class="type-signature"></span></h4>
-
-        
+    
+    <h4 class="name" id="Align"><span class="type-signature"></span>new Align<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
 
-    
 
-    
 
-    
 
-    
 
-    
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -111,7 +94,7 @@ Can add child to parent.</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line9">line 9</a>
+        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -123,20 +106,21 @@ Can add child to parent.</div>
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</div>
+
+
+
+
+
+
+
+
+
 
     
     </div>
@@ -147,7 +131,9 @@ Can add child to parent.</div>
 
     
 
-     
+    
+
+    
 
     
 
@@ -158,33 +144,404 @@ Can add child to parent.</div>
 
         
             
-<div class="method">
+
     
+
+    
+    <h4 class="name" id=".align"><span class="type-signature">(static) </span>align<span class="signature">(axis, parent, child, alignDesired<span class="signature-attributes">opt</span>, padding<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Private utility function for Align methods.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
         
 
-        <h4 class="name" id=".alignX"><span class="type-signature">(static) </span>alignX<span class="signature">(parent, child, alignX<span class="signature-attributes">opt</span>, padding<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+        <th>Type</th>
 
         
-    
-
-    
-    <div class="description">
-        Calculate the x position based on two widths and whether you want center, left, or right alignment.
-Optionally pass in the actual x position you want instead of getting a calculation based on relation.
-If the child is a display object, the x position will be set.
-Optionally add the child to the parent.
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-        <h5>Parameters:</h5>
+        <th>Attributes</th>
         
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>axis</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">= "x" or "y"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>parent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DisplayObject</span>
+|
+
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Parent display object or the size
+    (width or height depending on the axis) of the parent.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>child</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DisplayObject</span>
+|
+
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Child display object or the size
+    (width or height depending on the axis) of the child.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>alignDesired</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last">Align.CENTER, Align.LEFT,
+    Align.RIGHT, Align.TOP, Align.BOTTOM, or the actual value for the axis.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>padding</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last">space between.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>addChild</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last">Whether you want the child to be added
+    to the parent. Only if parent and child are display objects.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".alignX"><span class="type-signature">(static) </span>alignX<span class="signature">(parent, child, alignX<span class="signature-attributes">opt</span>, padding<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Calculate the x position based on two widths and whether you want
+center, left, or right alignment. Optionally pass in the actual x
+position you want instead of getting a calculation based on relation. If
+the child is a display object, the x position will be set. Optionally
+add the child to the parent.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -243,7 +600,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Parent display object or the width of the parent.</td>
+            <td class="description last">Parent display object or the
+    width of the parent.</td>
         </tr>
 
     
@@ -281,7 +639,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Child display object or the width of the child.</td>
+            <td class="description last">Child display object or the width
+    of the child.</td>
         </tr>
 
     
@@ -323,7 +682,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Align.CENTER, Align.LEFT, Align.RIGHT, or the actual x value.</td>
+            <td class="description last">Align.CENTER, Align.LEFT,
+    Align.RIGHT, or the actual x value.</td>
         </tr>
 
     
@@ -362,7 +722,9 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">If LEFT, the space between the left edge and x. If RIGHT, the space between the right edge and the end of the child's width.</td>
+            <td class="description last">If LEFT, the space between the left edge
+    and x. If RIGHT, the space between the right edge and the end of the
+    child"s width.</td>
         </tr>
 
     
@@ -401,16 +763,17 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Whether you want the child to be added to the parent. Only if parent and child are display objects.</td>
+            <td class="description last">Whether you want the child to be
+    added to the parent. Only if parent and child are display objects.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
 
 
 <dl class="details">
@@ -442,7 +805,7 @@ Optionally add the child to the parent.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line23">line 23</a>
+        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line32">line 32</a>
     </li></ul></dd>
     
 
@@ -454,27 +817,27 @@ Optionally add the child to the parent.
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     The x value.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -486,41 +849,43 @@ Optionally add the child to the parent.
     </dd>
 </dl>
 
-        
-
     
-</div>
+
+
+
+
 
         
             
-<div class="method">
-    
-        
-
-        <h4 class="name" id=".alignXandY"><span class="type-signature">(static) </span>alignXandY<span class="signature">(parent, child, alignX<span class="signature-attributes">opt</span>, alignY<span class="signature-attributes">opt</span>, paddingX<span class="signature-attributes">opt</span>, paddingY<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-        
-    
-
-    
-    <div class="description">
-        Calculate the x and y position of a child display object relative to the parent.
-Either center, left, right, top, or bottom alignment.
-Optionally pass in the actual x and/or y position you want instead of getting a calculation based on relation.
-The x and y positions of the child display object will be set.
-Optionally add the child to the parent.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".alignXandY"><span class="type-signature">(static) </span>alignXandY<span class="signature">(parent, child, alignX<span class="signature-attributes">opt</span>, alignY<span class="signature-attributes">opt</span>, paddingX<span class="signature-attributes">opt</span>, paddingY<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
-        <h5>Parameters:</h5>
-        
+
+
+
+<div class="description">
+    Calculate the x and y position of a child display object relative to the
+parent. Either center, left, right, top, or bottom alignment. Optionally
+pass in the actual x and/or y position you want instead of getting a
+calculation based on relation. The x and y positions of the child
+display object will be set. Optionally add the child to the parent.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -659,7 +1024,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Align.CENTER, Align.LEFT, Align.RIGHT, or the actual x value.</td>
+            <td class="description last">Align.CENTER, Align.LEFT,
+    Align.RIGHT, or the actual x value.</td>
         </tr>
 
     
@@ -701,7 +1067,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Align.CENTER, Align.TOP, Align.BOTTOM, or the actual y value.</td>
+            <td class="description last">Align.CENTER, Align.TOP,
+    Align.BOTTOM, or the actual y value.</td>
         </tr>
 
     
@@ -740,7 +1107,9 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">If LEFT, the space between the left edge and x. If RIGHT, the space between the right edge and the end of the child's width.</td>
+            <td class="description last">If LEFT, the space between the left edge
+    and x. If RIGHT, the space between the right edge and the end of the
+    child"s width.</td>
         </tr>
 
     
@@ -779,7 +1148,9 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">If TOP, the space between the top edge and y. If BOTTOM, the space between the bottom edge and the end of the child's height.</td>
+            <td class="description last">If TOP, the space between the top edge
+    and y. If BOTTOM, the space between the bottom edge and the end of
+    the child"s height.</td>
         </tr>
 
     
@@ -818,16 +1189,17 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Whether you want the child to be added to the parent. Only if parent and child are display objects.</td>
+            <td class="description last">Whether you want the child to be
+    added to the parent. Only if parent and child are display objects.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
 
 
 <dl class="details">
@@ -859,7 +1231,7 @@ Optionally add the child to the parent.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line57">line 57</a>
+        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line80">line 80</a>
     </li></ul></dd>
     
 
@@ -871,50 +1243,53 @@ Optionally add the child to the parent.
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</div>
+
+
+
+
+
+
+
+
+
 
         
             
-<div class="method">
-    
-        
-
-        <h4 class="name" id=".alignY"><span class="type-signature">(static) </span>alignY<span class="signature">(parent, child, alignY<span class="signature-attributes">opt</span>, padding<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
-
-        
-    
-
-    
-    <div class="description">
-        Calculate the y position based on two heights and whether you want center, top, or bottom alignment.
-Optionally pass in the actual y position you want instead of getting a calculation based on relation.
-If the child is a display object, the y position will be set.
-Optionally add the child to the parent.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".alignY"><span class="type-signature">(static) </span>alignY<span class="signature">(parent, child, alignY<span class="signature-attributes">opt</span>, padding<span class="signature-attributes">opt</span>, addChild<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
-        <h5>Parameters:</h5>
-        
+
+
+
+<div class="description">
+    Calculate the y position based on two heights and whether you want
+center, top, or bottom alignment. Optionally pass in the actual y
+position you want instead of getting a calculation based on relation. If
+the child is a display object, the y position will be set. Optionally
+add the child to the parent.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -973,7 +1348,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Parent display object or the height of the parent.</td>
+            <td class="description last">Parent display object or the
+    height of the parent.</td>
         </tr>
 
     
@@ -1011,7 +1387,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Child display object or the height of the child.</td>
+            <td class="description last">Child display object or the height
+    of the child.</td>
         </tr>
 
     
@@ -1053,7 +1430,8 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Align.CENTER, Align.TOP, Align.BOTTOM, or the actual y value.</td>
+            <td class="description last">Align.CENTER, Align.TOP,
+    Align.BOTTOM, or the actual y value.</td>
         </tr>
 
     
@@ -1092,7 +1470,9 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">If TOP, the space between the top edge and y. If BOTTOM, the space between the bottom edge and the end of the child's height.</td>
+            <td class="description last">If TOP, the space between the top edge and
+    y. If BOTTOM, the space between the bottom edge and the end of the
+    child"s height.</td>
         </tr>
 
     
@@ -1131,16 +1511,17 @@ Optionally add the child to the parent.
                 </td>
             
 
-            <td class="description last">Whether you want the child to be added to the parent. Only if parent and child are display objects.</td>
+            <td class="description last">Whether you want the child to be
+    added to the parent. Only if parent and child are display objects.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
 
 
 <dl class="details">
@@ -1172,7 +1553,7 @@ Optionally add the child to the parent.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line39">line 39</a>
+        <a href="Align.js.html">Align.js</a>, <a href="Align.js.html#line55">line 55</a>
     </li></ul></dd>
     
 
@@ -1184,27 +1565,27 @@ Optionally add the child to the parent.
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     The y value.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1216,10 +1597,11 @@ Optionally add the child to the parent.
     </dd>
 </dl>
 
-        
-
     
-</div>
+
+
+
+
 
         
     
@@ -1236,13 +1618,17 @@ Optionally add the child to the parent.
 
 </div>
 
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Align.html">Align</a></li></ul>
+</nav>
+
 <br class="clear">
 
-<!-- <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri May 05 2017 17:29:48 GMT-0700 (PDT) using the Minami theme.
-</footer> -->
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Sep 30 2017 09:47:28 GMT-0700 (PDT)
+</footer>
 
-<script>prettyPrint();</script>
-<!-- <script src="scripts/linenumber.js"></script> -->
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
 </body>
 </html>

@@ -19,6 +19,7 @@
     "chai": "3.5.0",
     "eslint": "3.19.0",
     "eslint-loader": "1.7.1",
+    "jsdoc": "^3.5.5",
     "jsdoc-webpack-plugin-v2": "^2.0.2",
     "mocha": "3.3.0",
     "webpack": "3.1.0",
