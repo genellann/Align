@@ -69,7 +69,9 @@ Please open an [issue](https://github.com/genradley/Align/issues) if you find an
 Please download or clone the repo and open [/docs/index.html](/docs/index.html) in a web browser
 
 ## MY OTHER GITHUB PROJECTS
-coming soon
+[PhaserSignals](https://github.com/genradley/PhaserSignals) - Add **_any_** listener to **_any_** signal. Dispatch **_any_** signal **_anywhere/anytime_**.
+
+More coming soon...
 
 ## CREDITS
 This project used the [webpack-library-starter](https://github.com/krasimir/webpack-library-starter) project
