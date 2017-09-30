@@ -1,4 +1,4 @@
-# This is a library that allows you to align display objects relative to one another
+# The Align library allows you to align display objects relative to one another
 Calculate the x and y position of a child display object relative to the parent. 
 
 Relationships: center, left, right, top, or bottom 
@@ -47,7 +47,7 @@ This library works with any javascript display objects that have these propertie
       y = -(childHeight - parentHeight) - padding;
     }
         
-## Code
+## CODE
 
 The functions in the Align library are static. This mean you do not need to instantiate the class. You can just call it like: LibraryName.functionName().
 
@@ -60,16 +60,32 @@ In your index.html, add a script tag to include the version of the align.min.js 
         Align.alignX(parent, child, Align.CENTER, 5, true);
     }    
 
-## Unit tests
+## UNIT TESTS
 The tests are [here](/test/Align.spec.js).
 
 Please open an [issue](https://github.com/genradley/Align/issues) if you find any bugs. We will fix the issue and add a test for it.
 
-## JSDocs
+## JSDOCS
 Please download or clone the repo and open [/docs/index.html](/docs/index.html) in a web browser
 
-## See my other libs
+## MY OTHER GITHUB PROJECTS
 coming soon
 
-## Credits
+## CREDITS
 This project used the [webpack-library-starter](https://github.com/krasimir/webpack-library-starter) project
+
+## ABOUT ME
+My name is Genell Radley. I am a game developer w/7yr professional experience writing games in Flash, Unity and HTML5. I believe in unit testing and documenting my code well. I am very excited to share my code here with you on GitHub. I hope you will contribute. 
+
+Please see my [github profile](https://github.com/genradley) and [linkedin profile](https://www.linkedin.com/in/genellradley/). 
+
+--
+(ignore this line. it is for seo purposes)
+Genell Radley
+Genell Radley
+Genell Radley
+Genell Radley
+Genell Radley
+Genell Radley
+Genell Radley
+Genell Radley
