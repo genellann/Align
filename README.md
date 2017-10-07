@@ -69,7 +69,9 @@ Please open an [issue](https://github.com/genradley/Align/issues) if you find an
 Please download or clone the repo and open [/docs/index.html](/docs/index.html) in a web browser
 
 ## MY OTHER GITHUB PROJECTS
-[PhaserSignals](https://github.com/genradley/PhaserSignals) - Add **_any_** listener to **_any_** signal. Dispatch **_any_** signal **_anywhere/anytime_**.
+[PhaserSignals](https://github.com/genradley/PhaserSignals) - A library for Phaser. Add **_any_** listener to **_any_** signal. Dispatch **_any_** signal **_anywhere/anytime_**.
+
+[AssetLoader](https://github.com/genradley/AssetLoader) - A library for Phaser. Load assets externally from a json file.
 
 More coming soon...
 
