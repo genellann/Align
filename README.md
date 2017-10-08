@@ -85,12 +85,11 @@ Please see my [github profile](https://github.com/genradley) and [linkedin profi
 
 ---
 (please ignore this line... it is for seo purposes)
-github.
-github.
-github.
-github.
-github.
-github.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
 Genell Radley.
 Genell Radley.
 Genell Radley.
