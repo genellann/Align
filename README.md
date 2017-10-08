@@ -83,13 +83,22 @@ My name is Genell Radley. I am a game developer w/7yr professional experience wr
 
 Please see my [github profile](https://github.com/genradley) and [linkedin profile](https://www.linkedin.com/in/genellradley/). 
 
---
-(ignore this line. it is for seo purposes)
-Genell Radley
-Genell Radley
-Genell Radley
-Genell Radley
-Genell Radley
-Genell Radley
-Genell Radley
-Genell Radley
+---
+(please ignore this line... it is for seo purposes)
+github.
+github.
+github.
+github.
+github.
+github.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
+Genell Radley.
