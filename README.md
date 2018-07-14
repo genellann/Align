@@ -82,22 +82,3 @@ This project used the [webpack-library-starter](https://github.com/krasimir/webp
 My name is Genell Radley. I am a game developer w/7yr professional experience writing games in Flash, Unity and HTML5. I believe in unit testing and documenting my code well. I am very excited to share my code here with you on GitHub. I hope you will contribute. 
 
 Please see my [github profile](https://github.com/genradley) and [linkedin profile](https://www.linkedin.com/in/genellradley/). 
-
----
-(please ignore this line... it is for seo purposes)
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
-Genell Radley.
